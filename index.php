@@ -6,9 +6,28 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 - stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte
  le occorrenze della parola da censurare -->
 
-<?php
-
-$name = 'Giovanni';
 
 
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="parole.php" method="GET">
+        <div>
+            <label>Paragrafo</label>
+            <input name="paragraph" type="text" >
+        </div>
+        <div>
+            <label>Parola da censurare</label>
+            <input name="word" type="text" >
+        </div>
+        <div>
+            <button type="submit">Invia parola</button>
+        </div>
+    </form>
+</body>
+</html>
