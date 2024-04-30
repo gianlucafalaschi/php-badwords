@@ -19,7 +19,7 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
     <form action="parole.php" method="GET">
         <div>
             <label>Paragrafo</label>
-            <input name="paragraph" type="text" >
+            <textarea name="paragraph"></textarea>
         </div>
         <div>
             <label>Parola da censurare</label>

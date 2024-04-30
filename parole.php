@@ -15,6 +15,6 @@ $parola = $_GET['word'];
 <body>
     <p>Il paragrafo e' <?php echo $paragrafo; ?> </p>
     <p>La lunghezza e' <?php echo strlen($paragrafo); ?>  </p>
-    <div>La parola e'</div>
+    <div>La parola e' <?php echo $parola; ?> </div>
 </body>
 </html>
