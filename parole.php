@@ -3,6 +3,8 @@
 $paragrafo = $_GET['paragraph'];
 $parola = $_GET['word'];
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -16,5 +18,8 @@ $parola = $_GET['word'];
     <p>Il paragrafo e' <?php echo $paragrafo; ?> </p>
     <p>La lunghezza e' <?php echo strlen($paragrafo); ?>  </p>
     <div>La parola e' <?php echo $parola; ?> </div>
+
+    <p>Il paragrafo censurato e' <?php echo str_replace( $parola, '***', $paragrafo); ?> </p>
+    <p>La lunghezza e' <?php echo strlen(str_replace( $parola, '***', $paragrafo)); ?>  </p>
 </body>
 </html>
